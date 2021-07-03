@@ -1,0 +1,79 @@
+function runProgram(input){
+	 var newInput = input.split("\n");
+	 
+}
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+let read = "";
+process.stdin.on("data", function (input) {
+    read += input;
+});
+process.stdin.on("end", function () {
+	read = read.replace(/\n$/,"")
+   runProgram(read);
+});
+process.on("SIGINT", function () {
+    read = read.replace(/\n$/,"")
+    runProgram(read);
+    process.exit(0);
+});
+
+
+
+
+================================================================================
+function runProgram(input) {
+var newInput = input.split("\n");
+  var t = Number(newInput[0]);
+  var p=0;
+  for(var k=0;k<t;k++){
+    var n=Number(newInput[p+1+k]);
+    var mat = newInput.slice(p+2+k, n+p+2+k).map(function (row) {
+    return row.split(" ").map(Number);
+    });
+    p=p+n;
+       
+}
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+let read = "";
+process.stdin.on("data", function (input) {
+    read += input;
+});
+process.stdin.on("end", function () {
+  read = read.replace(/\n$/,"")
+  read = read.replace(/\n$/,"")
+   runProgram(read);
+});
+process.on("SIGINT", function () {
+    read = read.replace(/\n$/,"")
+    runProgram(read);
+    process.exit(0);
+});
+
+================================================================================
+
+function runProgram(input){
+	 var newInput = input.split("\n");
+     var t = newInput[0];
+     for(var i =0 ; i<t ; i++){
+       var n = newInput[i*2+1];
+       var str = newInput[i*2+2];
+     }
+	 
+}
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+let read = "";
+process.stdin.on("data", function (input) {
+    read += input;
+});
+process.stdin.on("end", function () {
+	read = read.replace(/\n$/,"")
+   runProgram(read);
+});
+process.on("SIGINT", function () {
+    read = read.replace(/\n$/,"")
+    runProgram(read);
+    process.exit(0);
+});
